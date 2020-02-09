@@ -4,12 +4,19 @@ y luego mostrarlo por 'alert' al presionar el botón  'mostrar'
 */
 function mostrar()
 {
-    var dato;
+    var nombre; 
+    //var crea un espacio en la memoria. Ser claro y directo en su nombre.
 
-    // prompt devuelve un valor y lo guarda.
-    dato = prompt ("Ingrese un dato"); 
 
-    alert (dato);
+    // entrada: prompt es una entrada de datos.
+    nombre = prompt ("Ingrese un nombre"); 
+    //""sale en prompt para saber qué completar.
+    //nombre sale de prompt. Prompt se guarda en nombre.
+
+    //aceptar = siguiente paso.
+    // cancelar = null
+
+    alert (nombre);
 
 
 }
