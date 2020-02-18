@@ -14,13 +14,39 @@ function comenzar()
 {
 	//Genero el número RANDOM entre 1 y 100
 	 
-		//alert(numeroSecreto );
-	
+    //alert(numeroSecreto );
+    var min;
+    var max;
+
+    min = 1;
+    max = 100;
+    
+    numeroSecreto = Math.floor (Math.Random()* (max - min)) + 1
 
 }
 
 function verificar()
 {
 	
-	
+  var numeroUsuario;
+var contadorIntentos;
+
+
+
+  numeroUsuario = document.getElementById("numero").value;
+
+
+  if (numeroSecreto == numeroUsuario) {
+alert ("Usted es un ganador!!! y en solo X intentos")
+  }
+  else {
+  if (numeroUsuario > numeroSecreto) {
+alert ("Se pasó");
+
+  }
+else {
+  alert ("falta")
+  }
 }
+
+//
