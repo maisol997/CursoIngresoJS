@@ -35,7 +35,8 @@ do {
 	numero =parseInt (numero);
 
 } while (isNaN(numero));
-	
+	console.log (numero);
+
 	
 	if (numero > 0) {
 		//punto 2
@@ -69,7 +70,7 @@ do {
 	//punto 8
  promedioDeNegativos = sumaNegativos / contadorNegativos;
 	//punto 9
-diferenciaPositivosYNegativos = sumaPositivos - sumaNegativo;
+diferenciaPositivosYNegativos = sumaPositivos - sumaNegativos;
 
 document.write ("Promedio de positivos:" + promedioDePositivos + "<br >");
 document.write ("Promedio de negativos:" + promedioDeNegativos + "<br >");
