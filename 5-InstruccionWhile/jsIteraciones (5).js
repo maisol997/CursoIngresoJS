@@ -1,16 +1,21 @@
 function mostrar()
 {
+var sexoAlumno;
 
-var sexo = prompt("ingrese f ó m .");
-
-
-document.getElementById('Sexo').value=sexo;
+sexoAlumno = prompt("ingrese f ó m ");
 
 
-while (sexo != "f" && sexo != "m") {
-    sexo = prompt ("Ingrese un sexo valido");
-    saxo = sexo.toLowerCase();
+
+
+while (sexoAlumno != "f" && sexo != "m") 
+
+{
+    sexoAlumno = prompt ("Ingrese un sexo valido");
+    saxoAlumno = sexoAlumno.toLowerCase();
 
 }
+ acumulador = acumulador + sexoAlumno;
+
+
 
 }//FIN DE LA FUNCIÓN
