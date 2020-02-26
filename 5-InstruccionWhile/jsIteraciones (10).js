@@ -45,7 +45,8 @@ do {
 		contadorPositivos++;
 	} else if (numero <0) {
 		//punto 1
-		sumaNegativo += numero;
+		sumaNegativos += numero;
+		//o sumaNegativos = sumaNegativos + numero;
 		//punto 4
 		contadorNegativos++;
 
@@ -67,15 +68,28 @@ do {
 	//punto 7 
 	promedioDePositivos = sumaPositivos / contadorPositivos;
 
+if (promedioPositivos >0){
+	document.write ("Promedio de negativos: " + promedioDeNegativos + "<br >");
+	
+}
+else {
+	document.write ("Promedio de negativos: Da menor a 0" + "<br >");
+	
+}
 	//punto 8
  promedioDeNegativos = sumaNegativos / contadorNegativos;
 	//punto 9
 diferenciaPositivosYNegativos = sumaPositivos - sumaNegativos;
 
-document.write ("Promedio de positivos:" + promedioDePositivos + "<br >");
-document.write ("Promedio de negativos:" + promedioDeNegativos + "<br >");
+
+document.write ("Suma positivos: " + sumaPositivos + "<br >");
+document.write ("Suma negativos: " + sumaNegativos + "<br >");
+
+
+document.write ("Cantidad numeros positivos: " + contadorPositivos + "<br >");
+document.write ("Cantidad numeros negativos: " + contadorNegativos + "<br >");
+document.write ("Promedio de positivos: " + promedioDePositivos + "<br >");
 document.write("Diferencia: " + diferenciaPositivosYNegativos + "<br >");
-document.write("")
 
 
 

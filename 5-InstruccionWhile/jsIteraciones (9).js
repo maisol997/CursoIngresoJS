@@ -6,26 +6,26 @@ function mostrar()
 var maximo;
 var minimo;
 var primeraVez = true;
-var respuesta = true;
+var respuesta = "si";
 
-	while(respuesta)
+	while(respuesta !="no")
 	{
+		do {
+
+		
 		var numero = prompt ("Ingrese un numero");
 		respuesta = parseInt (numero);
-		
-		
-
-		while (isNaN(numero)){
-			numero = prompt ("Error: Ingrese un numero");
-			numero = parseInt (numero);
-
 	}
+		
+
+		while (isNaN(numero));
+
 
 	if (primeraVez){
 		primeraVez = false;
 
 		maximo = numero;
-		minimo = minimo;
+		minimo = numero;
 
 	} else {
 		if (numero > maximo) {
@@ -36,6 +36,9 @@ var respuesta = true;
 		}
 	}
 	respuesta = confirm ("Desea continuar");
+
+document.getElementById("maximo").value = maximo;
+document.getElementById("minimo").value = minimo;
 	}
 
 
