@@ -1,8 +1,19 @@
 function mostrar()
 {
+    var clave;
+
+    clave=prompt(clave);
+    clave = clave.toLowerCase();
+
+    while(clave!="utn750")
+    {
+        clave=prompt("Reingrese clave");
+
+    }
+    alert ("bienvenida");
 
 
-var clave = prompt ("Ingrese su clave");
+/*var clave = prompt ("Ingrese su clave");
 var contador = 0;
 
 clave = clave.toLowerCase();
@@ -24,5 +35,5 @@ if (clave == "utn750") {
 else {
     alert ("Maximos intentos ingresados");
 
-}
+}*/
 }//FIN DE LA FUNCIÓN

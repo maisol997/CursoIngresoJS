@@ -6,26 +6,20 @@ function mostrar()
 	var max;
 
 	min = 1;
-	max = 10;
+	max = 11;
 
-notaRandom = Math.floor (Math.random()*(max - min) ) + min;
-console.log (notaRandom);
+	notaRandom =  Math.floor (Math.random() * (max - min)) + min;
+	console.log (notaRandom);
 
-if (notaRandom >= 9 ) {
-		alert (notaRandom + "-EXCELENTE");
+	if (notaRandom >= 9 || notaRandom >= 11)
+	{
+		alert ("Excelente: " + notaRandom);
+
+	} else if ( notaRandom >=4 && notaRandom <=8){
+		alert ("Aprobado: " + notaRandom);
+	} else { 
+		alert ("PAra la proxima kpo HASTA LA PROXIMAAAA: " + notaRandom)
 	}
-	else {
-// entre 1 y 8
-	if (notaRandom >=4) {
-	alert (notaRandom + "-APROBO");
-
-	}
-
-else {
-alert (notaRandom + "-Vamos, la proxima se puede");
-}
-
-}
 	
 
 
